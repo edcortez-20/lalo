@@ -278,3 +278,27 @@ body {
   margin-bottom: 20px;
   font-size: 1.1rem;
 }
+.footer {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 40px 20px;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.footer .redes {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer .redes a {
+  font-size: 1.4rem;
+  color: #1877f2;
+  transition: color 0.3s;
+}
+
+.footer .redes a:hover {
+  color: #000;
+}
