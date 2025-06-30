@@ -263,3 +263,18 @@ body {
 .navbar a:hover {
   color: #1877f2;
 }
+.contacto {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.contacto h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contacto p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
