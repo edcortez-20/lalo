@@ -14,33 +14,45 @@
 </head>
 
 <body>
+
+  <!-- MENÚ -->
   <nav class="navbar">
-  <ul>
-    <li><a href="#hero">Inicio</a></li>
-    <li><a href="#servicios">Servicios</a></li>
-    <li><a href="#contacto">Contacto</a></li>
-  </ul>
-</nav>
+    <ul>
+      <li><a href="#hero">Inicio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero" id="hero">
     <div class="overlay">
       <h1>Cortez<sup>®</sup></h1>
       <p>
-  Gestionamos <strong>Meta Ads</strong> en
-  <span class="azul">Facebook</span> e
-  <span class="instagram">Instagram</span>
-</p>
+        Gestionamos <strong>Meta Ads</strong> en
+        <span class="azul">Facebook</span> e
+        <span class="instagram">Instagram</span>
+      </p>
       <p class="ia-glow">
-  Utilizamos <span class="robot-icon">🤖</span> <span class="glow-ia">IA</span>
-</p>
+        Utilizamos <span class="robot-icon">🤖</span> <span class="glow-ia">IA</span>
+      </p>
       <a href="https://wa.me/521XXXXXXXXXX" target="_blank" class="btn-whatsapp">
         Ventas por WhatsApp
       </a>
     </div>
   </section>
 
+  <!-- SOBRE MÍ -->
+  <section id="sobre-mi" class="sobre-mi">
+    <h2 data-aos="fade-up">Sobre mí</h2>
+    <p data-aos="fade-up" data-aos-delay="100">
+      Soy Eduardo Cortez, especialista en campañas de Meta Ads con enfoque en resultados, optimización constante y creatividad que convierte.
+    </p>
+  </section>
+
   <!-- SERVICIOS -->
-  <section class="servicios">
+  <section class="servicios" id="servicios">
     <h2 data-aos="fade-up">¿Qué hacemos?</h2>
     <div class="grid">
       <div class="card" data-aos="fade-up" data-aos-delay="100">
@@ -70,17 +82,17 @@
     </div>
   </section>
 
-  <!-- AOS Scripts -->
+  <!-- CONTACTO -->
+  <section id="contacto" class="contacto">
+    <h2 data-aos="fade-up">Contáctame</h2>
+    <p data-aos="fade-up" data-aos-delay="100">¿Tienes un proyecto en mente? Estoy listo para ayudarte.</p>
+    <a href="https://wa.me/521XXXXXXXXXX" class="btn-whatsapp" data-aos="fade-up" data-aos-delay="200">Enviar WhatsApp</a>
+  </section>
+
+  <!-- SCRIPTS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const textElement = document.querySelector(".robot-text");
-    textElement.textContent = "IA";
-  });
-</script>
 </body>
 </html>
-
