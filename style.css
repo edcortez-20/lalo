@@ -352,26 +352,25 @@ body {
   text-align: center;
 }
 .btn-glassy-whatsapp {
-.btn-glass {
-  padding: 14px 30px;
+  display: inline-block;
+  padding: 14px 32px;
   font-size: 1rem;
   font-weight: 600;
   color: #25d366;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  transition: all 0.3s ease-in-out;
+  border-radius: 2rem;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05),
+              0 0 30px rgba(37, 211, 102, 0.3); /* Efecto glow verde */
   text-decoration: none;
-  display: inline-block;
-}
-
+  transition: all 0.3s ease;
 }
 
 .btn-glassy-whatsapp:hover {
-  background: rgba(37, 211, 102, 0.2);
-  box-shadow: 0 10px 24px rgba(37, 211, 102, 0.4);
-  transform: scale(1.03);
+  background: rgba(37, 211, 102, 0.1);
+  box-shadow: 0 10px 24px rgba(37, 211, 102, 0.4),
+              0 0 60px rgba(37, 211, 102, 0.5);
+  transform: translateY(-3px);
 }
