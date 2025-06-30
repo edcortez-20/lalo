@@ -14,7 +14,7 @@ body {
 /* HERO */
 .hero {
   height: 100vh;
-  background-image: url("assets/fondolalo.png");
+  background-image: url("assets/fondo-cortez.png");
 ,
     url("assets/fondolalo.png"); /* <--- Este nombre debe coincidir EXACTAMENTE */
   background-size: cover;
