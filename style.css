@@ -352,20 +352,22 @@ body {
   text-align: center;
 }
 .btn-glassy-whatsapp {
-  background: rgba(37, 211, 102, 0.1); /* verde transparente */
-  color: #25d366;
-  padding: 14px 28px;
-  border-radius: 30px;
-  font-weight: bold;
+.btn-glass {
+  padding: 14px 30px;
   font-size: 1rem;
-  text-decoration: none;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.2);
-  border: 1px solid rgba(37, 211, 102, 0.4);
+  font-weight: 600;
+  color: #25d366;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.2);
   transition: all 0.3s ease-in-out;
+  text-decoration: none;
   display: inline-block;
-  text-align: center;
+}
+
 }
 
 .btn-glassy-whatsapp:hover {
