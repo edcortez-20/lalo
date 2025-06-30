@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000;
+  line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("assets/fondo-cortez.png"); /* <--- Este nombre debe coincidir EXACTAMENTE */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  color: white;
+}
+.overlay h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.overlay p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.overlay .azul {
+  color: #1877f2;
+  font-weight: 700;
+}
+
+.overlay .ia {
+  font-size: 1.1rem;
+  color: #1877f2;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.btn-whatsapp {
+  background-color: #25d366;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebd5b;
+}
+
+/* SERVICIOS */
+.servicios {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.servicios h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+}
+.extra {
+  margin-top: 50px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.extra h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.extra p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.proceso {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.proceso li {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+.instagram {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+.ia {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1877f2;
+  position: relative;
+}
+
+.ia::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #1877f2, #8e2de2);
+  border-radius: 2px;
+  animation: underlineSlide 2.5s infinite alternate ease-in-out;
+}
+
+@keyframes underlineSlide {
+  from {
+    width: 0%;
+    opacity: 0.2;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+.robot-text {
+  display: inline-block;
+  font-weight: 700;
+  color: #1877f2;
+  border-right: 2px solid #1877f2;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 1.5s steps(2) forwards, blink 0.8s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 2ch }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+.ia-glow {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1877f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 1rem;
+}
+
+.robot-icon {
+  font-size: 1.2rem;
+  animation: floatBot 2s ease-in-out infinite;
+}
+
+.glow-ia {
+  font-weight: 700;
+  color: #1877f2;
+  animation: glowText 2s ease-in-out infinite;
+}
+
+@keyframes glowText {
+  0% { text-shadow: 0 0 0px #1877f2; }
+  50% { text-shadow: 0 0 10px #1877f2; }
+  100% { text-shadow: 0 0 0px #1877f2; }
+}
+
+@keyframes floatBot {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #1877f2;
+  }
+  to {
+    text-shadow: 0 0 15px #1877f2;
+  }
+}
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
